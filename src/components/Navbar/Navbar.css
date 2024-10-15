@@ -1,0 +1,154 @@
+/* Reset margins, padding, and borders */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.navbar {
+  height: 100px; /* Fixed height for the navbar */
+  background-color: #789DBC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#prateek-logo {
+  height: 100%; /* Make the logo cover the full height of the navbar */
+  margin: 0;
+  border-radius: 10px;
+}
+
+.set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px; /* Minimal gap between elements */
+  margin-left: 5px;
+}
+
+.phone-number {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#search,
+#get-care-now {
+  padding: 10px 14px;
+  background-color: #FFE3E3;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.4s;
+  font-size: 12px;
+  font-weight: bolder;
+  color: black;
+}
+
+#search:hover,
+#get-care-now:hover {
+  background-color: #FEF9F2;
+}
+
+.navbar + .container {
+  margin-top: 20px;
+}
+
+/* Separate Media Queries */
+
+/* PC - Screens wider than 1024px */
+@media screen and (min-width: 1025px) {
+  .navbar {
+    height: 100px;
+    padding: 0 40px; /* Add more horizontal padding for larger screens */
+  }
+
+  .set {
+    gap: 20px; /* Increase space between buttons on larger screens */
+  }
+
+  .phone-number {
+    font-size: 24px; /* Standard size for PC */
+  }
+
+  #search,
+  #get-care-now {
+    padding: 10px 16px; /* Slightly larger buttons */
+    font-size: 14px; /* Increase font size */
+  }
+
+  #prateek-logo {
+    height: 100%; /* Full height of navbar for PC */
+    margin-left: 30px; /* Add margin to separate logo */
+    border-radius: 10px;
+  }
+}
+
+/* Tablets - Screens between 651px and 1024px */
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  .navbar {
+    height: 90px; /* Slightly reduced height for tablets */
+    padding: 0 20px;
+  }
+
+  .set {
+    gap: 15px; /* Reduce space between buttons */
+  }
+
+  .phone-number {
+    font-size: 18px; /* Adjust font size for tablets */
+  }
+
+  #search,
+  #get-care-now {
+    padding: 8px 12px; /* Smaller button padding */
+    font-size: 12px;
+  }
+
+  #prateek-logo {
+    height: 90%; /* Slightly reduce logo size */
+    margin-left: 20px; /* Adjust margin for tablets */
+  }
+}
+
+/* Mobile Phones - Screens up to 650px */
+@media screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    height: auto; /* Auto height based on content */
+    padding: 10px;
+  }
+
+  #prateek-logo {
+    height: 80px; /* Smaller logo for mobile */
+    margin-bottom: 10px; /* Add space below logo */
+  }
+
+  .set {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .phone-number {
+    font-size: 16px; /* Smaller font for mobile */
+    text-align: center;
+  }
+
+  #search,
+  #get-care-now {
+    padding: 6px 10px; /* Smaller button size for mobile */
+    font-size: 10px;
+  }
+
+  .navbar + .container {
+    margin-top: 40px;
+  }
+}

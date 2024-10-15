@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer_container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer {
+  height: auto; /* Set to auto to allow for responsive height */
+  background-color: #789dbc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px 10px 5px;
+}
+
+#logo {
+  height: 120px;
+  border-radius: 10px;
+}
+
+.textset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px; /* Add margin for spacing */
+}
+
+#bitsian_initiative {
+  font-size: 2.5rem; /* Change to rem */
+  line-height: 1.2; /* Improve line height */
+}
+
+.social_links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social_links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.social_links a {
+  padding: 5px 7px;
+  background-color: #ffe3e3;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.4s;
+  font-size: 12px;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none; /* Remove underline */
+}
+
+.social_links a:hover {
+  background-color: white; /* Change background color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #logo {
+    height: 130px;
+    margin-bottom: 20px;
+  }
+
+  #bitsian_initiative {
+    font-size: 2rem; /* Change to rem */
+  }
+
+  .social_links a {
+    font-size: 1.2rem; /* Change to rem */
+  }
+
+  .social_links li {
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  #logo {
+    height: 80px;
+  }
+
+  #bitsian_initiative {
+    font-size: 1.75rem; /* Change to rem */
+  }
+
+  .social_links a {
+    font-size: 1.1rem; /* Change to rem */
+  }
+
+  .social_links li {
+    margin-right: 8px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #logo {
+    height: 80px;
+  }
+
+  #bitsian_initiative {
+    font-size: 1.5rem; /* Change to rem */
+  }
+
+  #batch {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  .social_links {
+    margin-top: 5px;
+  }
+
+  .social_links li {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0; /* Reset margin-right for vertical layout */
+  }
+
+  .social_links a {
+    font-size: 1rem; /* Change to rem */
+    padding: 10px 15px; /* Increase padding for better touch targets */
+    display: block; /* Make the links full-width for better accessibility */
+  }
+}
