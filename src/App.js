@@ -1,4 +1,5 @@
 import logo from './logo.svg'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Items from './components/Items/Items'
