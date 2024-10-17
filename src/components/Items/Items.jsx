@@ -55,7 +55,7 @@ const Items = () => {
         >
           Escobaria
         </a>
-        <div className='description'>INR 149</div>
+        <div className='description'>INR 139</div>
       </div>
 
       {/* laxmi_kamal section */}
@@ -76,7 +76,7 @@ const Items = () => {
         >
           Laxmi Kamal
         </a>
-        <div className='description'>INR 159</div>
+        <div className='description'>INR 139</div>
       </div>
 
       {/* supplera section */}
@@ -94,7 +94,7 @@ const Items = () => {
         >
           Supplera
         </a>
-        <div className='description'>INR 289</div>
+        <div className='description'>INR 299</div>
       </div>
 
       {/* bunnyears_yellow section */}
@@ -140,7 +140,7 @@ const Items = () => {
         >
           Stone-crop
         </a>
-        <div className='description'>INR 155</div>
+        <div className='description'>INR 139</div>
       </div>
 
       {/* snake Plant section */}
@@ -158,7 +158,7 @@ const Items = () => {
         >
           Snake Plant
         </a>
-        <div className='description'>INR 159</div>
+        <div className='description'>INR 149</div>
       </div>
 
       {/* Kalanchoe section */}
@@ -200,7 +200,7 @@ const Items = () => {
         >
           Bunny Ears-White
         </a>
-        <div className='description'>INR 169</div>
+        <div className='description'>INR 149</div>
       </div>
 
       {/* money section */}
@@ -218,7 +218,7 @@ const Items = () => {
         >
           Money Plant
         </a>
-        <div className='description'>INR 159</div>
+        <div className='description'>INR 149</div>
       </div>
 
       {/* guldavari section */}
