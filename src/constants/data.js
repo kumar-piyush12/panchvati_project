@@ -47,5 +47,8 @@ const grids = {
     images.guldavari2,
     images.guldavari3,
   ], // Images for guldavari
+  tulsi: [
+    images.tulsi
+  ], // Images for tulsi
 }
 export default { logo, grids, wallpaper }

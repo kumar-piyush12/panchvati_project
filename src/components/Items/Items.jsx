@@ -5,6 +5,7 @@ import { data } from '../../constants/'
 const Items = () => {
   // State to track the current image index for each plant
   const [currentIndex, setCurrentIndex] = useState({
+    tulsi: 0,
     escobaria: 0,
     kalanchoe: 0,
     laxmi_kamal: 5,
@@ -37,15 +38,12 @@ const Items = () => {
 
   return (
     <div className='grid'>
-      {/* escobaria section */}
+      {/* Tulsi section */}
       <div className='horizontal'>
-        <img
-          src={data.grids.escobaria[currentIndex.escobaria]}
-          alt='escobaria'
-        />
+        <img src={data.grids.tulsi[currentIndex.tulsi]} alt='tulsi' />
         <div className='button-container'>
-          <button onClick={() => handlePrev('escobaria')}>&#8592;</button>
-          <button onClick={() => handleNext('escobaria')}>&#8594;</button>
+          <button onClick={() => handlePrev('tulsi')}>&#8592;</button>
+          <button onClick={() => handleNext('tulsi')}>&#8594;</button>
         </div>
         <a
           href='https://forms.gle/cKhuNdMeBys4kGWB6'
@@ -53,7 +51,7 @@ const Items = () => {
           rel='noopener noreferrer'
           className='head'
         >
-          Escobaria
+          Tulsi
         </a>
         <div className='description'>INR 139</div>
       </div>
@@ -95,6 +93,27 @@ const Items = () => {
           Supplera
         </a>
         <div className='description'>INR 299</div>
+      </div>
+      {/* escobaria section */}
+
+      <div className='horizontal'>
+        <img
+          src={data.grids.escobaria[currentIndex.escobaria]}
+          alt='escobaria'
+        />
+        <div className='button-container'>
+          <button onClick={() => handlePrev('escobaria')}>&#8592;</button>
+          <button onClick={() => handleNext('escobaria')}>&#8594;</button>
+        </div>
+        <a
+          href='https://forms.gle/cKhuNdMeBys4kGWB6'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='head'
+        >
+          Escobaria
+        </a>
+        <div className='description'>INR 139</div>
       </div>
 
       {/* bunnyears_yellow section */}

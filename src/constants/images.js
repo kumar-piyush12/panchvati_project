@@ -1,4 +1,5 @@
 import logo from '../assets/logo.jpg'
+import tulsi from '../assets/tulsi.jpg'
 import bunnyears from '../assets/bunnyears.jpg'
 import bunnyears2 from '../assets/bunnyears2.jpg'
 import bunnyears3 from '../assets/bunnyears3.jpg'
@@ -36,6 +37,7 @@ import wallpaper from '../assets/wallpaper.jpg'
 
 export default {
   logo,
+  tulsi,
   bunnyears,
   bunnyears2,
   bunnyears3,
