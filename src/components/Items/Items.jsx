@@ -53,7 +53,7 @@ const Items = () => {
         >
           Tulsi
         </a>
-        <div className='description'>INR 139</div>
+        <div className='description'>INR 189</div>
       </div>
 
       {/* laxmi_kamal section */}
